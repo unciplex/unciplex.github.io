@@ -43,8 +43,10 @@
 <meta property="og:image" content="http://renph.lol/2023/01/21/trainee/attach.png">
 <meta property="og:image" content="http://renph.lol/2023/01/21/trainee/18.png">
 <meta property="og:image" content="http://renph.lol/2023/01/21/trainee/19.png">
+<meta property="og:image" content="http://renph.lol/2023/01/21/trainee/%E5%88%87%E6%8D%A2%E5%88%86%E7%B1%BB.png">
+<meta property="og:image" content="http://renph.lol/2023/01/21/trainee/%E5%88%87%E6%8D%A2%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99.png">
 <meta property="article:published_time" content="2023-01-20T17:10:39.000Z">
-<meta property="article:modified_time" content="2023-01-29T09:38:35.600Z">
+<meta property="article:modified_time" content="2023-01-31T09:21:12.902Z">
 <meta property="article:author" content="Reddish">
 <meta property="article:tag" content="网优">
 <meta name="twitter:card" content="summary_large_image">
@@ -241,7 +243,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          10k 字
+          12k 字
         
       </span>
     
@@ -252,7 +254,7 @@
         
         
         
-          88 分钟
+          99 分钟
         
       </span>
     
@@ -311,15 +313,12 @@
                 <h1>一：通信整体架构</h1>
 <p>核心网 &lt;–&gt; 承载（传输）网 &lt;–&gt; 接入（无线）网 &lt;—&gt; 终端</p>
 <p><img src="1.png" srcset="/img/loading.gif" lazyload alt=""></p>
-<br/>
 <span id="more"></span>
 <h1>二：无线网络优化内容</h1>
 <p>无线网络优化是对天线和UE之间无线连接的技术优化以及对基站覆盖区的网络质量的监控，即提高空口质量</p>
-<br/>
 <h1>三：基站 (4G：eNodeB）</h1>
 <p>基站包含：天线，馈线，RRU，光纤，BBU等部分</p>
 <p><img src="2.png" srcset="/img/loading.gif" lazyload alt=""></p>
-<br/>
 <h2 id="1-天线-（小区-扇区-Cell-载波）">1.天线 （小区/扇区/Cell/载波）</h2>
 <p>参数：方位角，下倾角（机械下倾角、电子下倾角）</p>
 <p>方位角：以正北方向为0°为基准，依据方位角最小的方向依次分为第一小区（扇区）第二小区（扇区）第三小区（扇区）</p>
@@ -340,7 +339,6 @@
 <p>BBU在天线和RRU附近的机房里面，一定范围内的数个BBU在一个机房的机柜中</p>
 <p>作用：<strong>对整个基站的管理和控制</strong>，<strong>对信号的最终处理</strong></p>
 <p><img src="5.png" srcset="/img/loading.gif" lazyload alt=""></p>
- <br/>
 <h1>四：电磁波相关知识</h1>
 <p>电磁波definition：看不到的光；也是由于振动产生</p>
 <p>频率definition: 单位时间内完成周期性变化的次数</p>
@@ -354,7 +352,6 @@
 <p>信源编码是完成<strong>A/D转换</strong>。</p>
 <p>信道编码的作用：是将信源编码器输出的机内码转换成适合于在信道上传输的线路码，完成<strong>码型变换</strong></p>
 <p>信道编码则是通过添加一定的校验位和<strong>冗余项</strong>，来提高码自身的纠错能力的手段。</p>
- <br/>
 <h1>五：通信发展史</h1>
 <table>
 <thead>
@@ -410,7 +407,6 @@
 </tr>
 </tbody>
 </table>
-<br/>
 <h1>六：4G的信号调制标准以及带宽标准</h1>
 <p>3GPP规定：</p>
 <p>信号调制分为</p>
@@ -445,7 +441,6 @@
 </ul>
 <p>空口质量差的时候 --&gt; 多加冗余编码 for 保证信号质量</p>
 <p>空口质量优的时候 --&gt;少加冗余编码 for 提供传输速度</p>
- <br/>
 <h1>七：中国移动频率资源</h1>
 <table>
 <thead>
@@ -566,7 +561,6 @@
 </tbody>
 </table>
 <p>注：FDD系统的带宽代表下行带宽</p>
-<br/>
 <h1>八： LTE 参数</h1>
 <h3 id="1-RSRP">1.RSRP</h3>
 <p>参考信号强度/功率;	单位：dbm 毫瓦分贝</p>
@@ -591,7 +585,6 @@
 <h4 id="速率的影响因素：">速率的影响因素：</h4>
 <p><img src="6.png" srcset="/img/loading.gif" lazyload alt=""></p>
 <p>attach： Sinr的好坏受干扰和RSRP影响 	plus （下行）mode3/模3干扰（def：同一覆盖区域内有同频同PHY序列号情况）</p>
-<br/>
 <h1>九：LTE室内分布系统</h1>
 <p>goal :</p>
 <ol>
@@ -661,7 +654,6 @@
 <li>外泄设计原则：室内覆盖信号应尽可能少地泄漏到室外，要求室外10米处应满足RSRP≤-110dBm或室内小区外泄的RSRP比室外主服务小区RSRP低10dB；</li>
 <li>在满足以上条件下，手机应优先占用室内分布系统信号。</li>
 </ol>
-<br/>
 <h1>十：LTE基础原理</h1>
 <p>EPS ( Evolved Packet System)演进分组系统</p>
 <p>LTE（Long Term Evolution)长期演进</p>
@@ -757,7 +749,6 @@ S1用户面的接口是建立在GTP-U协议的基础上，连接基站与MME，�
 <p>L3：层3 RRC</p>
 </li>
 </ul>
-<br/>
 <h1>十一：LTE关键技术</h1>
 <ul>
 <li>
@@ -872,7 +863,6 @@ S1用户面的接口是建立在GTP-U协议的基础上，连接基站与MME，�
 <p>更好的同频干扰控制，性能和覆盖提升</p>
 </li>
 </ul>
-<br/>
 <h1>十二：上下行物理信道与信号名称</h1>
 <table>
 <thead>
@@ -936,7 +926,6 @@ S1用户面的接口是建立在GTP-U协议的基础上，连接基站与MME，�
 </tr>
 </tbody>
 </table>
-<br/>
 <h1>十三：LTE帧结构</h1>
 <h3 id="1TDD类型无线帧结构">1TDD类型无线帧结构</h3>
 <ol>
@@ -959,16 +948,13 @@ S1用户面的接口是建立在GTP-U协议的基础上，连接基站与MME，�
 <p>SSP5: 抗干扰性强，覆盖广  --&gt; F频段</p>
 <p>SSP6: 沿海城市频繁用</p>
 <p>SSP7: D E A， 现网中宏站存在  --&gt; D频段 E频段 A频段</p>
-<br/>
 <h1>十四：LTE的频域</h1>
 <p>每15kHz 一个子载波</p>
 <p>20M带宽有1200个子载波</p>
-<br/>
 <h1>十五：LTE 资源带宽</h1>
 <p>（最小的资源单位）RE = 一个子载波 + 一个符号</p>
 <p>（最小的用户面资源）RB = 连续的12个子载波 + 一个时隙 = 84RE</p>
 <p>（又叫RB对）PRB = 连续的12个子载波 + 一个子帧</p>
-<br/>
 <h1>十六：UE开机入网流程</h1>
 <p><img src="15.png" srcset="/img/loading.gif" lazyload alt=""></p>
 <ul>
@@ -988,7 +974,7 @@ S1用户面的接口是建立在GTP-U协议的基础上，连接基站与MME，�
 <h3 id="1-PLMN选择请求">1:PLMN选择请求</h3>
 <p>PLMN选择和重选目的是选择一个可用的（可以提供正常业务的）最好的PLMN，UE会维持一个PLMN列表，这些列表将PLMN按照优先级排列，然后从高优先级向下搜索，找到的自然是最高优先级的PLMN</p>
 <h3 id="2-小区搜索">2:小区搜索</h3>
-<p>基本原理：小区搜索是UE实现与E-UTRAN下行时频同步并获取服务小区IDPCI的过程</p>
+<p>基本原理：小区搜索是UE实现与E-UTRAN下行时频同步并获取服务小区ID PCI的过程</p>
 <p>步骤：</p>
 <ol>
 <li>UE解调同步信道SCH中的主同步信号（PSS），实现 符号 频率同步，并获取小区组内ID</li>
@@ -1010,7 +996,7 @@ S1用户面的接口是建立在GTP-U协议的基础上，连接基站与MME，�
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">D3,20Mhz</td>
+<td style="text-align:center">D3,20MHz</td>
 <td style="text-align:center">小区组内ID（PHY序列号）</td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
@@ -1103,7 +1089,6 @@ S1用户面的接口是建立在GTP-U协议的基础上，连接基站与MME，�
 <li>RRCConnectionSeetup：停止T300计时器</li>
 <li>RRCConnectionReject：启动T302定时器</li>
 </ol>
-<br/>
 <h1>十七：KPl(Key Performance Indicator,关键绩效指标)</h1>
 <ul>
 <li>[ ] 接入性指标（无线接通率）</li>
@@ -1114,15 +1099,15 @@ S1用户面的接口是建立在GTP-U协议的基础上，连接基站与MME，�
 <p>$<br>
 无线接通率 = RRC建立成功率 * E-rab建立成功率<br>
 $</p>
-<p>无线（接入）接通率即Attach 成功率；处理对象为 成功率 &lt; 80% 称做 TOP小区<br>
-$<br>
+<p>无线（接入）接通率即Attach 成功率；处理对象为 成功率 &lt; 80% 称做 TOP小区</p>
+<p>$<br>
 RRC建立成功率 = RRC建立成功次数 / RRC建立总次数<br>
-$<br>
-RRC建立成功率直接决定空口质量；<br>
-$<br>
+$</p>
+<p>RRC建立成功率直接决定空口质量；</p>
+<p>$<br>
 E-rab建立成功率 = E-rab建立成功次数 / E-rab建立总次数<br>
-$<br>
-E-rab是UE与核心网之间建立的连接；RRC是UE与基站间建立的连接；UE上下文连接是基站与核心网间建立的连接；</p>
+$</p>
+<p>E-rab是UE与核心网之间建立的连接；RRC是UE与基站间建立的连接；UE上下文连接是基站与核心网间建立的连接；</p>
 <p>E-rab成功指的是手机开机入网信令图中从MSG5 - &gt; MSG13 即：RRCConnectSetupComplete -&gt; RRCConnectionReconfig</p>
 <h3 id="2-无线掉线率">2.无线掉线率</h3>
 <p>$<br>
@@ -1143,7 +1128,6 @@ $</p>
 <h6 id="TAC">TAC</h6>
 <p>TAC(Tracking Area Code)  跟踪区域码:定义小区所属的跟踪区域码，一个跟踪区域可以涵盖一个或多个小区。<br>
 跟踪区（Tracking Area）是LTE系统为UE的位置管理新设立的概念。当UE处于空闲状态时，核心网络能够知道UE所在的跟踪区，同时当处于空闲状态的UE需要被寻呼时，必须在UE所注册的跟踪区的所有小区进行寻呼。</p>
-<br/>
 <h1>十八：移动性管理</h1>
 <p>def：移动性管理是蜂窝移动通信系统必备的机制，能够**<u>辅助LTE系统实现负载均衡、提高用户体验和系统整体性能</u>**。</p>
 <p>分类：</p>
@@ -1160,10 +1144,12 @@ $</p>
 <th></th>
 <th></th>
 <th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td></td>
 <td>E</td>
 <td>D/A</td>
 <td>FDD1800/A</td>
@@ -1407,7 +1393,7 @@ $</p>
 </table>
 <p>重选游戏规则流程图：</p>
 <p><img src="19.png" srcset="/img/loading.gif" lazyload alt=""></p>
-<h3 id="2-R准则：">2.R准则：</h3>
+<h3 id="R准则：">R准则：</h3>
 <p>$<br>
 Qmeans,s + Qhust &lt; Qmeans,t - Qoffsets<br>
 $</p>
@@ -1417,7 +1403,7 @@ $</p>
 <p>$<br>
 邻区RSRP - 本小区RSRP &gt; 小区重选迟滞 + 目标小区偏置 （ 异频 + 频率偏置）<br>
 $</p>
-<h3 id="3-S准则（小区选择算法）：">3.S准则（小区选择算法）：</h3>
+<h3 id="S准则（小区选择算法）：">S准则（小区选择算法）：</h3>
 <p>$<br>
 Srxlev = Qrxlevmeans - (Qrxlevmin + Qrxlevminoffset) - Pcompensation<br>
 $</p>
@@ -1425,12 +1411,136 @@ $</p>
 ☆(当Srxlev &gt; 0 时，终端驻留该小区) Srxlev ≈ RSRP - 最小接入电平<br>
 $</p>
 <ul>
-<li>Qrxlevmin: 测试到的RSRP</li>
-<li>Qrxlevmin: 指最小接入电平，一般为-64dBm （2dBm）</li>
-<li>Qrxlevminoffset: 指最小接受电平偏置， 一般为0</li>
-<li>Pcompensation = max( Pmax - Pumax, 0 ), 用来惩罚低功率手机</li>
+<li>
+<p>Qrxlevmin: 测试到的RSRP</p>
+</li>
+<li>
+<p>Qrxlevmin: 指最小接入电平，一般为-64dBm （2dBm）</p>
+</li>
+<li>
+<p>Qrxlevminoffset: 指最小接受电平偏置， 一般为0</p>
+</li>
+<li>
+<p>Pcompensation = max( Pmax - Pumax, 0 ), 用来惩罚低功率手机</p>
+<ul>
 <li>Pmax: 参数设定允许UE最大发射功率[通过LST CELLRESEL 命令查询，一般默认为23(切记不可更改该参数来控制用户小区选择)</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>==1、频率级参数 EUTRANINTERNFREQ==</em></td>
+</tr>
+<tr>
+<td style="text-align:center">异频频点高优先级重选门限</td>
+</tr>
+<tr>
+<td style="text-align:center">异频频点低优先级重选门限</td>
+</tr>
+<tr>
+<td style="text-align:center">频率偏置</td>
+</tr>
+<tr>
+<td style="text-align:center">目标频点优先级</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>==2、事件级参数 CELLRESEL==</em></td>
+</tr>
+<tr>
+<td style="text-align:center">同频测量启动门限</td>
+</tr>
+<tr>
+<td style="text-align:center">小区重选迟滞</td>
+</tr>
+<tr>
+<td style="text-align:center">异频异系统测量启动门限</td>
+</tr>
+<tr>
+<td style="text-align:center">服务频点低优先级重选门限</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>==3、两两小区级参数EUTRANINTERFREQNCELL==</em></td>
+</tr>
+<tr>
+<td style="text-align:center">目标小区偏置</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="2-移动性管理——连接态小区切换">2.移动性管理——连接态小区切换</h2>
+<p>什么是切换？</p>
+<p>切换是指手机在连接态的移动性管理</p>
+<h3 id="切换的分类：">切换的分类：</h3>
+<p><img src="%E5%88%87%E6%8D%A2%E5%88%86%E7%B1%BB.png" srcset="/img/loading.gif" lazyload alt="分类"></p>
+<h3 id="执行切换的前提：">执行切换的前提：</h3>
+<p>LTE系统中执行切换有个必要的前提，需要先添加邻区，添加邻区的步骤为</p>
+<p>1、添加目标小区频点信息。</p>
+<p>ADD EUTRANINTERNFREQ</p>
+<p>添加频点</p>
+<p>(1).本小区认识该频率</p>
+<p>(2).配置对该频率的频率级参数</p>
+<p>2、添加目标小区的外部信息（基站与基站之间的关系）</p>
+<p>ADD EUTRANEXTERNALCELL</p>
+<p>添加外部（本小区所在基站认识目标小区）</p>
+<p>(1).添加目标小区CI（基站标识+小区标识）</p>
+<p>(2).目标小区PCI</p>
+<p>(3).频点</p>
+<p>(4).TAC</p>
+<p>3、添加邻区（小区与小区间的关系）</p>
+<p>ADD EUTRANINTERFREQNCELL</p>
+<p>添加邻区(本小区认识目标小区)x</p>
+<p>(1).本地小区标识</p>
+<p>(2).目标小区CI</p>
+<p>(3).两两小区级参数</p>
+<p>添加邻区的步骤必须按顺序执行，缺一不可。只有在本服务小区上添加了邻区之后才能进行切换流程。</p>
+<hr>
+<h3 id="切换的流程：">切换的流程：</h3>
+<ol>
+<li>测量控制：同频一直测，异频的邻区需要满足A2事件一个TTT的时间后，会下发RRC重配置信令（内主要包含测量配置消息）启动异频测量</li>
+<li>测量：同频一直测，异频按照测量配置里的规则去测</li>
+<li>事件上报：测量完满足事件一个TTT时间才上报测量报告给基站</li>
+<li>判决：由目标小区来判决，看目标小区有无资源可用（是否高负荷）</li>
+<li>执行</li>
+</ol>
+<h3 id="切换的游戏规则：">切换的游戏规则：</h3>
+<p><img src="%E5%88%87%E6%8D%A2%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99.png" srcset="/img/loading.gif" lazyload alt="切换游戏规则"></p>
+<h3 id="切换的事件介绍：">切换的事件介绍：</h3>
+<p>A1					本服务小区RSRP好于一个门限 			停止测量</p>
+<p>A2					本服务小区RSRP低于一个门限 			启动测量</p>
+<p>同频A3			同频邻区RSRP大于本服务小区一个值</p>
+<p>异频A3			异频邻区RSRP大于本服务小区一个值</p>
+<p>异频A4			“低向高”					邻区RSRP大于一个A4门限</p>
+<p>异频A5			“高相低”					1.本服务小区信号低于一个A5门限</p>
+<p>​										   				2.满足A4事件也就是邻区RSRP大于一个A4门限</p>
+<p>异系统B1		异系统&quot;低向高&quot;		4G切换5G							 邻区RSRP大于一个B1门限</p>
+<p>异系统B2		异系统&quot;高向低&quot;		5G切换4G/4G切换3G  		1.本服务小区信号低于一个B2门限</p>
+<p>​																										  2.满足B1事件也就是邻区RSRP大于一个B1门限</p>
+<h3 id="参数介绍：">参数介绍：</h3>
+<p><s><em>Ocs：服务小区偏置      弃用</em></s></p>
+<p>Mn：邻区RSRP值</p>
+<p>Ms：本服务小区的RSRP值</p>
+<p><strong>==A1 Thresh：1.基于A3的异频A1 RSRP触发门限	或	2.基于A4A5的异频A1 RSRP触发门限==</strong></p>
+<p><strong>==A2 Thresh：基于A3的异频A2 RSRP触发门限	或	基于A4A5的异频A2 RSRP触发门限==</strong></p>
+<p><strong>==Ofn：连接态频率偏置==</strong></p>
+<p>A1A2事件中的Hys：异频A1A2幅度迟滞</p>
+<p><strong>==Ocn：（CIO）小区偏移量==</strong></p>
+<p>Hys(事件迟滞)：1.同频切换幅度迟滞	2.异频切换幅度迟滞</p>
+<p>Off(事件偏置)： 1.同频A3偏置	2.异频切换偏置（0.5dB）</p>
+<p>TTT： 1.同频切换时间迟滞	2.异频切换时间迟滞	3.异频A1A2时间迟滞（毫秒）</p>
+<p><strong>==A4 Thresh：A4门限	基于覆盖的异频RSRP触发门限==</strong></p>
+<p><strong>==A5 Thresh：A5门限1	异频切换A5 RSRP门限1==</strong></p>
+<p>​</p>
 
                 
               </div>
