@@ -4,6 +4,32 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2023/02/02/%E5%8D%8E%E4%B8%BAMML%E7%BD%91%E7%AE%A1%E2%80%94%E2%80%94%E5%8F%82%E6%95%B0%E5%88%86%E7%B1%BB/"/>
+    <url>/2023/02/02/%E5%8D%8E%E4%B8%BAMML%E7%BD%91%E7%AE%A1%E2%80%94%E2%80%94%E5%8F%82%E6%95%B0%E5%88%86%E7%B1%BB/</url>
+    
+    <content type="html"><![CDATA[<h1>重选参数</h1><h3 id="频率级参数-EUTRANINTERNFREQ">频率级参数 EUTRANINTERNFREQ</h3><p><code>Eutran异频相邻频点</code></p><p>1.异频频点高优先级重选门限</p><p>2.异频频点低优先级重选门限</p><p>3.频率偏置</p><p>4.目标频点优先级</p><h3 id="事件级参数-CELLRESEL">事件级参数 CELLRESEL</h3><p><code>小区重选信息</code></p><p>1.同频测量启动门限</p><p>2.小区重选迟滞</p><p>3.异频异系统测量启动门限</p><p>4.服务频点低优先级重选门限</p><p>5.(本)小区重选优先级</p><h3 id="两两小区级参数-EUTRANINTERFREQNCELL">两两小区级参数 EUTRANINTERFREQNCELL</h3><p><code>查询EUTRAN异频邻区关系</code></p><p>目标小区偏置(-24dB ~ 24dB)</p><h1>切换参数</h1><h3 id="事件级参数-同频-INTRAFREQHOGROUP">事件级参数(同频) INTRAFREQHOGROUP</h3><p><code>同频切换参数组</code></p><p>1.同频(A3)切换偏置(0.5分贝) Off</p><p>2.同频切换幅度迟滞(0.5分贝) Hys</p><p>3.同频切换时间迟滞(毫秒) TTT</p><h3 id="事件级参数-异频-INTERFREQHOGROUP">事件级参数(异频) INTERFREQHOGROUP</h3><p><code>查询异系统切换公共参数组</code></p><p>1.基于A3的异频A1 RSRP触发门限(毫瓦分贝) Off</p><p>2.基于A3的异频A2 RSRP触发门限(毫瓦分贝)</p><p>3.基于A4A5异频A1 RSRP触发门限(毫瓦分贝)</p><p>4.基于A4A5异频A2 RSRP触发门限(毫瓦分贝)</p><p>5.异频A1A2幅度迟滞(0.5分贝) Hys</p><p>6.异频A1A2时间迟滞(毫秒)</p><p>7.异频A3偏置(0.5分贝) Off</p><p>8.基于覆盖的异频RSRP触发门限(毫瓦分贝)[A4门限]</p><p>9.异频切换A5 RSRP门限1(毫瓦分贝)</p><p>10.异频切换幅度迟滞(0.5分贝) Hys</p><p>11.异频切换时间迟滞(毫秒)TTT</p><h3 id="两两小区级参数-EUTRANINTERFREQNCELL-2">两两小区级参数 EUTRANINTERFREQNCELL</h3><p><code>查询EUTRAN异频邻区关系</code></p><p>1.小区偏移量</p><h3 id="频率级参数-EUTRANINTERNFREQ-2">频率级参数 EUTRANINTERNFREQ</h3><p>1.异频切换触发事件类型</p><p>2.连接态频率偏置 Ofn</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2023/02/02/VOLTE%E5%AF%BB%E5%91%BC%E6%B5%81%E7%A8%8B(%E4%B8%BB%E4%BB%8EUE%E5%9D%87%E5%9C%A8%E7%A9%BA%E9%97%B2%E6%80%81)/"/>
+    <url>/2023/02/02/VOLTE%E5%AF%BB%E5%91%BC%E6%B5%81%E7%A8%8B(%E4%B8%BB%E4%BB%8EUE%E5%9D%87%E5%9C%A8%E7%A9%BA%E9%97%B2%E6%80%81)/</url>
+    
+    <content type="html"><![CDATA[<h3 id="VOLTE寻呼流程（主从UE均在空闲态）">VOLTE寻呼流程（主从UE均在空闲态）</h3><p>主机先给IMS发送<code>INVITE(含主被叫手机号)</code>，</p><p>主机与主基站建立<code>RRC连接</code>和<code>QCI=5</code>和Q<code>CI=9</code>的承载连接。</p><p>之后IMS开始向从机寻呼。</p><hr><p>然后从机与从基站建立<code>RRC连接</code>和<code>QCI=5</code>和<code>QCI=9</code>的承载连接，</p><p>同时从机通过IMS向主机发送<code>INVITE 100</code>和<code>INVITE 183</code>（资源协商），</p><p>主从机同时建立QCI=1的VoLTE专用承载连接。</p><hr><p>接着从机发送PRACK（资源预留）和UPDATE（接收媒体格式协商），</p><p>从机回复PRACK 200(确定)、UPDATE 200，</p><p>同时从机通过IMS发送INVITE180(被叫振铃)给主机，</p><p>主机再回复INVITE 200确定。</p><hr><p>主机通过IMS发送ACK（主叫确定）给从机</p><p>开始通话</p><hr><p>任意一方挂断电话之后通过IMS给对方发BYE，</p><p>同时双方立即释放RRC重配置，释放QCI=1的承载连接。<code>[Deactivate EPS Bearer Context(RRC RECONFIG)]</code></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>MML后台网管常用指令集</title>
     <link href="/2023/01/22/MML%E5%90%8E%E5%8F%B0%E7%BD%91%E7%AE%A1%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E9%9B%86/"/>
     <url>/2023/01/22/MML%E5%90%8E%E5%8F%B0%E7%BD%91%E7%AE%A1%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E9%9B%86/</url>
