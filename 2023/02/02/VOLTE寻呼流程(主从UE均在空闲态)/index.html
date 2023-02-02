@@ -16,21 +16,22 @@
   <meta name="author" content="Reddish">
   <meta name="keywords" content="">
   
-    <meta name="description" content="VOLTE寻呼流程（主从UE均在空闲态） 主机先给IMS发送INVITE(含主被叫手机号)， 主机与主基站建立RRC连接和QCI&#x3D;5和QCI&#x3D;9的承载连接。 之后IMS开始向从机寻呼。  然后从机与从基站建立RRC连接和QCI&#x3D;5和QCI&#x3D;9的承载连接， 同时从机通过IMS向主机发送INVITE 100和INVITE 183（资源协商）， 主从机同时建立QCI&#x3D;1的VoLTE专用承载连接。  接着">
+    <meta name="description" content="VOLTE寻呼流程（主从UE均在空闲态） 主机先给IMS发送INVITE(含主被叫手机号)， 主机与主基站建立RRC连接和QCI&#x3D;5和QCI&#x3D;9的承载连接。 之后IMS开始向从机寻呼。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Reddish’s Blog">
+<meta property="og:title" content="VoLTE寻呼信令概述">
 <meta property="og:url" content="http://renph.lol/2023/02/02/VOLTE%E5%AF%BB%E5%91%BC%E6%B5%81%E7%A8%8B(%E4%B8%BB%E4%BB%8EUE%E5%9D%87%E5%9C%A8%E7%A9%BA%E9%97%B2%E6%80%81)/index.html">
 <meta property="og:site_name" content="Reddish’s Blog">
-<meta property="og:description" content="VOLTE寻呼流程（主从UE均在空闲态） 主机先给IMS发送INVITE(含主被叫手机号)， 主机与主基站建立RRC连接和QCI&#x3D;5和QCI&#x3D;9的承载连接。 之后IMS开始向从机寻呼。  然后从机与从基站建立RRC连接和QCI&#x3D;5和QCI&#x3D;9的承载连接， 同时从机通过IMS向主机发送INVITE 100和INVITE 183（资源协商）， 主从机同时建立QCI&#x3D;1的VoLTE专用承载连接。  接着">
+<meta property="og:description" content="VOLTE寻呼流程（主从UE均在空闲态） 主机先给IMS发送INVITE(含主被叫手机号)， 主机与主基站建立RRC连接和QCI&#x3D;5和QCI&#x3D;9的承载连接。 之后IMS开始向从机寻呼。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-02T02:57:38.671Z">
-<meta property="article:modified_time" content="2023-02-02T02:56:57.476Z">
+<meta property="article:modified_time" content="2023-02-02T03:16:55.583Z">
 <meta property="article:author" content="Reddish">
+<meta property="article:tag" content="信令概述">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Reddish’s Blog</title>
+  <title>VoLTE寻呼信令概述 - Reddish’s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -195,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="VoLTE寻呼信令概述"></span>
           
         </div>
 
@@ -277,7 +278,7 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none"></h1>
+            <h1 style="display: none">VoLTE寻呼信令概述</h1>
             
             
               <div class="markdown-body">
@@ -286,6 +287,7 @@
 <p>主机先给IMS发送<code>INVITE(含主被叫手机号)</code>，</p>
 <p>主机与主基站建立<code>RRC连接</code>和<code>QCI=5</code>和Q<code>CI=9</code>的承载连接。</p>
 <p>之后IMS开始向从机寻呼。</p>
+<span id="more"></span>
 <hr>
 <p>然后从机与从基站建立<code>RRC连接</code>和<code>QCI=5</code>和<code>QCI=9</code>的承载连接，</p>
 <p>同时从机通过IMS向主机发送<code>INVITE 100</code>和<code>INVITE 183</code>（资源协商），</p>
@@ -310,6 +312,13 @@
               <div class="post-metas my-3">
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="../../../../tags/%E4%BF%A1%E4%BB%A4%E6%A6%82%E8%BF%B0/">#信令概述</a>
+      
+    </div>
+  
 </div>
 
 
@@ -318,7 +327,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
+      <div>VoLTE寻呼信令概述</div>
       <div>http://renph.lol/2023/02/02/VOLTE寻呼流程(主从UE均在空闲态)/</div>
     </div>
     <div class="license-meta">
@@ -361,9 +370,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="../%E5%8D%8E%E4%B8%BAMML%E7%BD%91%E7%AE%A1%E2%80%94%E2%80%94%E5%8F%82%E6%95%B0%E5%88%86%E7%B1%BB/" title="">
+                      <a href="../%E5%8D%8E%E4%B8%BAMML%E7%BD%91%E7%AE%A1%E2%80%94%E2%80%94%E5%8F%82%E6%95%B0%E5%88%86%E7%B1%BB/" title="华为MML网管——参数分类">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
+                        <span class="hidden-mobile">华为MML网管——参数分类</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
